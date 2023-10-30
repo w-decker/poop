@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=c5ced968eda925caa686" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,9 +38,8 @@
     <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=c5ced968eda925caa686" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686" />
-  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=c5ced968eda925caa686"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
@@ -77,15 +76,6 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
-  
-  <div id="pst-scroll-pixel-helper"></div>
-
-  
-  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
-
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -142,7 +132,6 @@ const thebe_selector_output = ".output, .cell_output"
   
 
 <a class="navbar-brand logo" href="intro.html">
-  
   
   
   
@@ -320,10 +309,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
   </button>
 `);
 </script>
@@ -331,7 +320,7 @@ document.write(`
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+    <i class="fa-solid fa-magnifying-glass"></i>
   </button>
 `);
 </script>
@@ -387,18 +376,18 @@ document.write(`
 <span class="nf">head</span><span class="p">(</span><span class="n">iris</span><span class="p">)</span>
 
 <span class="c1"># pipe operator</span>
-<span class="n">m</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">iris</span><span class="w"> </span><span class="o">%&gt;%</span>
-<span class="w">  </span><span class="nf">group_by</span><span class="p">(</span><span class="n">Species</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span>
-<span class="w">  </span><span class="nf">summarize</span><span class="p">(</span><span class="n">mean</span><span class="o">=</span><span class="nf">mean</span><span class="p">(</span><span class="n">Sepal.Length</span><span class="p">))</span>
+<span class="n">m</span> <span class="o">&lt;-</span> <span class="n">iris</span> <span class="o">%&gt;%</span>
+  <span class="nf">group_by</span><span class="p">(</span><span class="n">Species</span><span class="p">)</span> <span class="o">%&gt;%</span>
+  <span class="nf">summarize</span><span class="p">(</span><span class="n">mean</span><span class="o">=</span><span class="nf">mean</span><span class="p">(</span><span class="n">Sepal.Length</span><span class="p">))</span>
 
 <span class="c1"># print</span>
-<span class="nf">print</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;Mean Sepal Length for setosa&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m</span><span class="p">[</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">]))</span>
+<span class="nf">print</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;Mean Sepal Length for setosa&quot;</span> <span class="o">=</span> <span class="n">m</span><span class="p">[</span><span class="m">1</span><span class="p">,</span> <span class="m">2</span><span class="p">]))</span>
 </pre></div>
 </div>
 <p>In this example, we are using <code class="docutils literal notranslate"><span class="pre">%&gt;%</span></code>. This is called a chain operator. It sends the output from one execution of code to the other. Let’s break this down line by line.</p>
-<div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">iris</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span><span class="c1"># this assigned the iris df to a variable, m. %&gt;% tells it that we want to do more</span>
-<span class="w">    </span><span class="nf">groub_by</span><span class="p">(</span><span class="n">Species</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span><span class="c1"># Here, we are grouping the data by species type and planning on doing even more</span>
-<span class="w">    </span><span class="nf">summarize</span><span class="p">(</span><span class="n">mean</span><span class="o">=</span><span class="nf">mean</span><span class="p">(</span><span class="n">Sepal.Length</span><span class="p">))</span><span class="w"> </span><span class="c1"># Here, we are getting the mean sepal length for each group. </span>
+<div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">&lt;-</span> <span class="n">iris</span> <span class="o">%&gt;%</span> <span class="c1"># this assigned the iris df to a variable, m. %&gt;% tells it that we want to do more</span>
+    <span class="nf">groub_by</span><span class="p">(</span><span class="n">Species</span><span class="p">)</span> <span class="o">%&gt;%</span> <span class="c1"># Here, we are grouping the data by species type and planning on doing even more</span>
+    <span class="nf">summarize</span><span class="p">(</span><span class="n">mean</span><span class="o">=</span><span class="nf">mean</span><span class="p">(</span><span class="n">Sepal.Length</span><span class="p">))</span> <span class="c1"># Here, we are getting the mean sepal length for each group. </span>
 </pre></div>
 </div>
 <p>Because we have used <code class="docutils literal notranslate"><span class="pre">%&gt;%</span></code> we do not assign the entire data frame <code class="docutils literal notranslate"><span class="pre">iris</span></code> to the variable <code class="docutils literal notranslate"><span class="pre">m</span></code>, but rather, assign the output from our subsequent code to <code class="docutils literal notranslate"><span class="pre">m</span></code>. In this case, the means of sepal lengths for each species are assigned to the variable <code class="docutils literal notranslate"><span class="pre">m</span></code>. Let’s take a look at another example of procedural programming with Unix.</p>
@@ -417,7 +406,7 @@ cat file.txt | grep &quot;l&quot; | wc
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  Cell In[1], line 3
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  Cell In [1], line 3
     cd $x
        ^
 SyntaxError: invalid syntax
@@ -426,14 +415,14 @@ SyntaxError: invalid syntax
 </div>
 </div>
 <p>Here, we are using <code class="docutils literal notranslate"><span class="pre">|</span></code>. This is called the pipe operator. The output of one command is assigned to the input of another command. Let’s take a look at this line by line.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">x</span><span class="o">=</span><span class="nb">pwd</span><span class="w"> </span><span class="c1"># this finds the current working directory and assigns it to variable x.</span>
-<span class="nb">cd</span><span class="w"> </span><span class="nv">$x</span><span class="w"> </span><span class="c1"># This allows us to enter the current working directory</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">x</span><span class="o">=</span><span class="nb">pwd</span> <span class="c1"># this finds the current working directory and assigns it to variable x.</span>
+<span class="nb">cd</span> <span class="nv">$x</span> <span class="c1"># This allows us to enter the current working directory</span>
 </pre></div>
 </div>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Hello world&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>file.txt<span class="w"> </span><span class="c1"># this creates a file named &quot;file.txt&quot; with &quot;Hello world&quot; as the first line.</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;Hello world&quot;</span> &gt; file.txt <span class="c1"># this creates a file named &quot;file.txt&quot; with &quot;Hello world&quot; as the first line.</span>
 </pre></div>
 </div>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cat<span class="w"> </span>file.txt<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s2">&quot;l&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>wc<span class="w"> </span><span class="c1"># cat &lt;file&gt; reads in the file. `|` Tells us to do more. grep &quot;l&quot; is saying to get all the information of strings that contain the letter &quot;l&quot;. wc is word count information</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cat file.txt <span class="p">|</span> grep <span class="s2">&quot;l&quot;</span> <span class="p">|</span> wc <span class="c1"># cat &lt;file&gt; reads in the file. `|` Tells us to do more. grep &quot;l&quot; is saying to get all the information of strings that contain the letter &quot;l&quot;. wc is word count information</span>
 </pre></div>
 </div>
 <p>We have used the pipe operator to assign outputs from one command to the inputs of another. But the two examples which I have provided are overly pedantic to get a simple point across. In fact, they may have served you better for other coding functions, operations etc. So to justify the simplicity of procedural programming (at least for the extent of this module), I will provide one more exapmle with Python.</p>
@@ -504,10 +493,11 @@ The number 10 is even.
 
               
               
-              
-              
-                <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="intro.html"
@@ -527,7 +517,10 @@ The number 10 is even.
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
+</div></div>
+  
 </div>
+
                 </footer>
               
             </div>
@@ -591,8 +584,8 @@ By Will Decker
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=c5ced968eda925caa686"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686"></script>
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
 
   <footer class="bd-footer">
   </footer>
