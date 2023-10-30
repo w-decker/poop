@@ -367,7 +367,7 @@ document.write(`
 <h2>Before OOP<a class="headerlink" href="#before-oop" title="Permalink to this heading">#</a></h2>
 <p>The conceptual understanding and method for programming that is often used is called <em>procedural</em> programming. Backend components may run code in parallel, or my operate using fancy technology, but the code is written procedurally. This means that is is executed or written with the intent that each line will be executed sequentially.</p>
 <p>There are a few different examples that illustrate this explicitly. Let’s take a look at the <strong>R Programming Language</strong>.</p>
-<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1"># libraries</span>
+<div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="c1"># libraries</span>
 <span class="nf">library</span><span class="p">(</span><span class="n">dplyr</span><span class="p">)</span>
 <span class="nf">library</span><span class="p">(</span><span class="n">tidyr</span><span class="p">)</span>
 
@@ -391,28 +391,16 @@ document.write(`
 </pre></div>
 </div>
 <p>Because we have used <code class="docutils literal notranslate"><span class="pre">%&gt;%</span></code> we do not assign the entire data frame <code class="docutils literal notranslate"><span class="pre">iris</span></code> to the variable <code class="docutils literal notranslate"><span class="pre">m</span></code>, but rather, assign the output from our subsequent code to <code class="docutils literal notranslate"><span class="pre">m</span></code>. In this case, the means of sepal lengths for each species are assigned to the variable <code class="docutils literal notranslate"><span class="pre">m</span></code>. Let’s take a look at another example of procedural programming with Unix.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># enter current path
-x=pwd
-cd $x
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># enter current path</span>
+<span class="nv">x</span><span class="o">=</span><span class="nb">pwd</span>
+<span class="nb">cd</span> <span class="nv">$x</span>
 
-# make file with some text
-echo &quot;Hello world&quot; &gt; file.txt
+<span class="c1"># make file with some text</span>
+<span class="nb">echo</span> <span class="s2">&quot;Hello world&quot;</span> &gt; file.txt
 
-# use pipe
-cat file.txt | grep &quot;l&quot; | wc
+<span class="c1"># use pipe</span>
+cat file.txt <span class="p">|</span> grep <span class="s2">&quot;l&quot;</span> <span class="p">|</span> wc
 </pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  Cell In [1], line 3
-    cd $x
-       ^
-SyntaxError: invalid syntax
-</pre></div>
-</div>
-</div>
 </div>
 <p>Here, we are using <code class="docutils literal notranslate"><span class="pre">|</span></code>. This is called the pipe operator. The output of one command is assigned to the input of another command. Let’s take a look at this line by line.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">x</span><span class="o">=</span><span class="nb">pwd</span> <span class="c1"># this finds the current working directory and assigns it to variable x.</span>
